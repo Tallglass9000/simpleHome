@@ -1,0 +1,83 @@
+body {
+	font-family: "Work Sans", Arial, sans-serif;
+}
+
+#first {
+	height: 768px;
+	width: 100%;
+}
+
+#second {
+	height: 768px;
+	width: 100%;
+	background-color: rgb(255, 75, 0);
+	background-color: rgba(255, 75, 0, 0.9);
+	opacity: 0.9;
+	padding-left: 22%;
+	margin-right: 10px;
+}
+
+#firstInner {
+	color: #FFF;
+	font-size: 600%;
+	position: absolute;
+	padding-top: 25%;
+	padding-left: 22%;
+	padding-bottom: 25%;
+}
+
+#greeting {
+	background-color: rgb(255, 75, 0);
+	background-color: rgba(255, 75, 0, 0.8);
+
+}
+
+#briefResume {
+	color: white;
+	font-size: 150%;
+	position: absolute;
+	padding-top: 12%;
+	padding-right: 22%;
+	text-decoration: none;
+}
+
+#name {
+	font-size: 120%;
+}
+
+a:hover, a:link, a:active, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+/* Some of this code comes from http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video */
+
+video#bgvideo { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background: url(skygrass_canstockphoto.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    background-size: cover; 
+}
+
+video { 
+	display: block; 
+}
+
+@media screen and (max-device-width: 768px) {
+    html {
+         background: url(skygrass_canstockphoto.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvideo {
+        display: none;
+    }
+}
